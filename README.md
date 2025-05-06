@@ -27,10 +27,9 @@ This project showcases my skills, services, and the projects I've worked on. Bui
 You can reach me at:
 
 - 📧 **Email**: irfan.noorzada123@gmail.com  
-- 🌐 [Live Website](https://yourusername.github.io/your-repo-name/)  
-- 💼 [GitHub Profile](https://github.com/yourusername)  
-- 📸 [Instagram](https://instagram.com/yourprofile)  
-- 🧵 [Threads](https://threads.net/yourprofile)  
-- 🐦 [Twitter/X](https://twitter.com/yourprofile)
+- 🌐 [Live Website](https://mohammad-irfan-noorzada.github.io/Personal-Portfolio/)
+- 💼 [GitHub Profile](https://github.com/Mohammad-Irfan_Noorzada)  
+- 📸 [Instagram](https://instagram.com/irfan_codes)   
+- 🐦 [Twitter/X](https://twitter.com/irfan_codes)
 
 > I'm open to internships, part-time jobs, and freelance work!
