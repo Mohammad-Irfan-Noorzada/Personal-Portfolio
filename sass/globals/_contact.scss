@@ -1,0 +1,88 @@
+@use 'function' as m;
+.contact {
+
+    &__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: m.rem(64);
+
+        @include breakpoint('xl') {
+            column-gap: m.rem(32);
+        }
+
+        @include breakpoint('lg') {
+            grid-template-columns: 1fr;
+            row-gap: m.rem(32);
+        }
+    }
+
+    &__description, &__input {
+        font-weight: $weight-300;
+    }
+
+    &__description {
+        margin-bottom: m.rem(48);
+
+        @include breakpoint('lg') {
+            margin-bottom: m.rem(32);
+        }
+
+        & a {
+            color: $sky-blue-light;
+            font-weight: $weight-500;
+        }
+    }
+
+    &__content {
+
+        @include breakpoint('lg') {
+            order: 1;
+        }
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__input {
+        border: m.rem(2) solid $warm-brown;
+        padding: m.rem(12.8) m.rem(20);
+        width: 100%;
+        border-radius: $redius;
+        font-size: $smaller-font-size;
+        margin-bottom: m.rem(20);
+    }
+
+    & .textarea {
+        height: m.rem(120);
+        resize: none;
+    }
+
+    &__error-message {
+        position: absolute;
+        bottom: -12%;
+        left: 0;
+        font-size: $small-font-size;
+        font-weight: $weight-400;
+    }
+
+    &__img {
+        @include breakpoint('lg') {
+            width: m.rem(500);
+            margin-inline: auto;
+        }
+
+        @include breakpoint('md') {
+            width: m.rem(400);
+            margin-inline: auto;
+        }
+    }
+}
+
+.error {
+    color: $error-red-color;
+}
+
+.success {
+    color: $grey-light;
+}

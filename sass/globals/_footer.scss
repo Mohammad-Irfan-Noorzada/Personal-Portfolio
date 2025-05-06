@@ -1,0 +1,75 @@
+@use 'function' as a;
+
+.footer {
+    background-color: $greyish-bc-color;
+    padding-block: a.rem(28);
+
+    &__container {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        @include breakpoint('md') {
+            grid-template-columns: 1fr; 
+            row-gap: a.rem(20);
+            justify-items: center;
+        }
+    }
+
+    &__logo {
+        color: $grey-light;
+        font-size: a.rem(40);
+        font-weight: $weight-700;
+
+        & span {
+            color: $sky-blue-dark;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: a.rem(12);
+    }
+
+    & i {
+        font-size: $h3-font-size;
+    }
+
+    & a {
+        text-decoration: none;
+    }
+
+    &__social-link {
+        color: $sky-blue-light;
+        font-size: $small-font-size;
+        border: a.rem(2) solid $sky-blue-dark;
+        width: a.rem(46);
+        height: a.rem(46);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        transition: all .3s $transition;
+
+        @include breakpoint('lg') {
+            font-size: $smaller-font-size-992;
+            width: a.rem(36);
+            height: a.rem(36);
+        }
+
+        &:hover {
+            background-color: $sky-blue-dark;
+            color: $grey-light;
+        }
+    }
+
+    &__copyright {
+        font-size: $small-font-size;
+        font-weight: $weight-400;
+        justify-self: flex-end;
+
+        @include breakpoint('md') {
+            justify-self: center;
+        }
+    }
+}

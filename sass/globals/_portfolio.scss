@@ -1,0 +1,91 @@
+@use 'function' as n;
+
+.portfolio {
+    background-color: $greyish-bc-color;
+
+    @include breakpoint("md") {
+        padding-inline: n.rem(20);
+    }
+  
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+  
+      @include breakpoint('xl') {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      @include breakpoint('md') {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    &__item {
+      border-radius: $redius;
+      box-shadow: 0 n.rem(10) n.rem(15) $dark-bc-color;
+      overflow: hidden;
+      cursor: pointer;
+  
+      &:hover .portfolio__img {
+        filter: brightness(0.5);
+      }
+  
+      &:hover .portfolio__overlay {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    &__image-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    &__img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: filter 0.3s $transition;
+    }
+  
+    &__overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: $grey-light;
+      font-weight: $weight-500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: $h3-font-size;
+      opacity: 0;
+      transform: translateY(20%);
+      transition: all 0.3s $transition;
+      pointer-events: none;
+      z-index: $z-fixed;
+    }
+  
+    &__data {
+      padding: n.rem(30);
+      text-align: center;
+  
+      @include breakpoint('sm') {
+        padding: n.rem(16);
+      }
+    }
+  
+    &__title {
+      margin-block: n.rem(8);
+    }
+  
+    &__subtitle,
+    &__description {
+      color: $grey-light;
+      font-weight: $weight-500;
+      font-size: $small-font-size;
+    }
+  
+    & a {
+      text-decoration: none;
+    }
+  }
+  

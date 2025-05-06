@@ -1,0 +1,55 @@
+@use 'function' as b;
+
+.services {
+
+    @include breakpoint("md") {
+        padding-inline: b.rem(20);
+    }
+
+    &__container {
+        grid-template-columns: repeat(3, 1fr);
+
+        @include breakpoint('xl') {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint('md') {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        background-color: $warm-brown;
+        padding: b.rem(56) b.rem(40);
+        border-radius: $redius;
+        text-align: center;
+
+        @include breakpoint('sm') {
+            padding: b.rem(32) b.rem(24);
+        }
+    }
+
+    &__icon {
+         color: $greyish-bc-color;
+         font-size: b.rem(52);
+         line-height: 1;
+
+        @include breakpoint('lg') {
+            font-size: b.rem(40);
+        }
+    }
+
+    &__title {
+        font-size: $h3-font-size;
+        font-weight: $weight-500;
+        margin-block: b.rem(28) b.rem(20);
+
+        @include breakpoint('lg') {
+            margin-block: b.rem(24) b.rem(16);
+        }
+    }
+
+    &__description {
+        font-weight: $weight-400;
+    }
+}

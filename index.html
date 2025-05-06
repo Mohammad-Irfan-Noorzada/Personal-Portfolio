@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irfan's Personal Portfolio</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!---------- Header --------->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="nav__logo">I<span>r</span>f<span>a</span>n</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="#home" class="nav__link nav__active-link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="fa-solid fa-times"></i>
+            </div>
+        </div>
+
+        <div class="nav__socials">
+            <a href="https://www.facebook.com/irfan.codes4" target="_blank" class="nav__social-link">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/irfan_codes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="nav__social-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Mohammad-Irfan-Noorzada" target="_blank" class="nav__social-link">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://x.com/irfan_codes" target="_blank" class="nav__social-link">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+
+        <div class="nav__btns">
+            <a href="#contact" class="nav__link-btn btn">Let's Talk</a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav> 
+</header>
+
+
+<!---------- Main --------->
+<main class="main">
+
+    <!---------- Home --------->
+    <section class="home" id="home">
+        <div class="home__container container grid">
+            <div class="home__content">
+                <span class="home__subtitle">Welcome To My World</span>
+                <h1 class="home__title">I'm Mohammad Irfan Noorzada.<span class="typing"></span></h1>
+            </div>
+            <img src="images/THSF6121.JPEG" alt="my-photo" class="home__img">
+        </div>
+    </section>
+
+
+<!---------- About --------->
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+            <img data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" src="images/IBXX2376.JPEG" alt="my-photo" class="about__img">
+            <div class="about__content">
+                <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="section__title">About Me</h2>
+                <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="about__description">I'm Mohammad Irfan Noorzada — a passionate self-taught web developer from Afghanistan. My goal is to build clean, responsive websites and eventually work as a professional developer while pursuing my degree in Computer Software Engineering. I'm always open to freelance work, learning new technologies, and creating impactful digital experiences.</p>
+                
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="tabs">
+                    <span class="tabs__btn tabs__active-tab" data-target="#skills">Skills</span>
+                    <span class="tabs__btn" data-target="#projects">Projects</span>
+                    <span class="tabs__btn" data-target="#career-goals">Goals</span>
+                    <span class="tabs__btn" data-target="#education">Education</span>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="tabs__content">
+                    <div class="tabs__item tabs__active-tabs" data-content id="skills">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description"><span>User experience design</span> - UI/UX<span> Delight the user and make it work.</span></p>
+
+                            <p class="tabs__description"><span>Web and user interface design</span> - Development<span> Website, web experience, ...</span></p>
+
+                            <p class="tabs__description"><span>Interaction</span> - Animation<span> I like to make it move</span></p>
+                        </div> 
+                    </div>
+
+                    <div class="tabs__item" data-content id="projects">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description"><span>Personal Portfolio</span> - 2025 <span>Designed to showcase my web development skills.</span></p>
+
+                            <p class="tabs__description"><span>Tip Calculator App</span> - 2025 <span>Built with HTML, CSS, and JavaScript.</span></p>
+
+                            <p class="tabs__description"><span>Huddle Landing Page with Curved Sections</span> - 2025 <span>Responsive design with CSS and HTML.</span></p>
+                        </div> 
+                    </div>
+
+                    <div class="tabs__item" data-content id="career-goals">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description"><span>Front-End Development</span> - Master React and Node.js<span>Build real-world, responsive websites.</span></p>
+                    
+                            <p class="tabs__description"><span>Freelance Projects</span> - Gain experience<span>Start working before university.</span></p>
+                    
+                            <p class="tabs__description"><span>Software Engineering</span> - University goal<span>Study and grow as a developer.</span></p>
+                        </div> 
+                    </div>
+                    
+                    <div class="tabs__item" data-content id="education">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description"><span>High School</span> - Navi Bakhtar High School <span>Graduated in 2023.</span></p>
+
+                            <p class="tabs__description"><span>English Deploma</span> - <a href="https://ourmeli.com/slides/lado-8" target="_blank">MELI Institute</a> <span>Completed in 2023</span></p>
+
+                            <p class="tabs__description"><span>Web Development</span> - Self study on <a href="https://www.w3schools.com" target="_blank">W3Schools</a> <span>HTML, CSS, JavaScript</span></p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!---------- Services --------->
+    <section class="services section" id="services">
+        <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="section__title">My Awesome Services</h2>
+        <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="section__description">I design and build responsive, modern websites using the latest web technologies like HTML, CSS, and JavaScript. Whether it's a clean landing page or a dynamic user interface, I deliver sleek and user-friendly solutions tailored to your goals.</p>
+
+        <div class="services__container container grid">
+            <div data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" class="services__item">
+                <i class="fa-solid fa-code services__icon"></i>
+                <h3 class="services__title">web Development</h3>
+                <p class="services__description">Clean, responsive websites using HTML, CSS and JavaScript</p>
+            </div>
+
+            <div data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" class="services__item">
+                <i class="fa-solid fa-laptop-code services__icon"></i>
+                <h3 class="services__title">Frontend Design</h3>
+                <p class="services__description">User-friendly interfaces with attention to layout and detial.</p>
+            </div>
+
+            <div data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" class="services__item">
+                <i class="fa-solid fa-mobile-screen services__icon"></i>
+                <h3 class="services__title">Responsive Design</h3>
+                <p class="services__description">Website that work on all devices -- phones, tablets, and desktops.</p>
+            </div>
+
+            <div data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" class="services__item">
+                <i class="fa-solid fa-pen-nib services__icon"></i>
+                <h3 class="services__title">UI Prototyping</h3>
+                <p class="services__description">Visual layouts before development for better planning and results.</p>
+            </div>
+
+            <div data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" class="services__item">
+                <i class="fa-solid fa-bolt services__icon"></i>
+                <h3 class="services__title">Performance Optimization</h3>
+                <p class="services__description">Fast-loading, efficient code for better user experience.</p>
+            </div>
+
+            <div data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" class="services__item">
+                <i class="fa-solid fa-globe services__icon"></i>
+                <h3 class="services__title">Multilingual Layouts</h3>
+                <p class="services__description">Web pages structured to support multiple languages.</p>
+            </div>
+        </div>
+    </section>
+
+
+<!---------- Portfolio --------->
+    <section class="portfolio section" id="portfolio">
+        <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="section__title">My Latest Projects</h2>
+        <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="section__description">
+            Here are some of the recent projects I've worked on, showcasing my skills in responsive design, interactivity, and modern web development.
+        </p>
+
+        <div class="portfolio__container container grid">
+            <a data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" href="https://mohammad-irfan-noorzada.github.io/huddle-landing-page/" target="_blank" class="portfolio__link">
+                <div class="portfolio__item">
+                    <div class="portfolio__image-wrapper">
+                        <img src="images/Screenshot 2025-04-30 at 18-04-03 Frontend Mentor Huddle landing page with alternating feature blocks.png" alt="Huddle alternating blocks" class="portfolio__img">
+                            <div class="portfolio__overlay">Click to see more</div>
+                        </div>
+                    <div class="portfolio__data">  
+                        <p class="portfolio__subtitle">HTML & CSS</p>
+                        <h3 class="portfolio__title">Huddle Feature Blocks</h3>
+                        <p class="portfolio__description">A responsive layout with alternating feature sections.</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" href="https://mohammad-irfan-noorzada.github.io/clipboard-landing-page-master/" target="_blank" class="portfolio__link">
+                <div class="portfolio__item">
+                    <div class="portfolio__image-wrapper">
+                        <img src="images/Screenshot 2025-04-30 at 17-59-44 Frontend Mentor Clipboard landing page.png" alt="Clipboard landing page" class="portfolio__img">
+                            <div class="portfolio__overlay">Click to see more</div>
+                        </div>
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">HTML & CSS</p>
+                        <h3 class="portfolio__title">Clipboard Landing Page</h3>
+                        <p class="portfolio__description">Modern product-focused landing page with sleek design.</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" href="https://mohammad-irfan-noorzada.github.io/fylo-landing-page/" target="_blank" class="portfolio__link">
+                <div class="portfolio__item">
+                    <div class="portfolio__image-wrapper">
+                        <img src="images/Screenshot 2025-04-30 at 18-00-26 Frontend Mentor Fylo landing page with two column layout.png" alt="Fylo landing page" class="portfolio__img">
+                            <div class="portfolio__overlay">Click to see more</div>
+                        </div>
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">HTML & CSS</p>
+                        <h3 class="portfolio__title">Fylo Two-Column Page</h3>
+                        <p class="portfolio__description">A well-structured layout using two responsive columns.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" href="https://mohammad-irfan-noorzada.github.io/advice-generator-app-main/" target="_blank" class="portfolio__link">
+                <div class="portfolio__item">
+                    <div class="portfolio__image-wrapper">
+                        <img src="images/Screenshot 2025-04-30 at 18-05-33 Frontend Mentor Advice generator app.png" alt="Advice generator" class="portfolio__img">
+                            <div class="portfolio__overlay">Click to see more</div>
+                        </div>
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">JavaScript</p>
+                        <h3 class="portfolio__title">Advice Generator App</h3>
+                        <p class="portfolio__description">Fetches and displays random advice using an API.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" href="https://mohammad-irfan-noorzada.github.io/faq-accordion/" target="_blank" class="portfolio__link">
+                <div class="portfolio__item">
+                    <div class="portfolio__image-wrapper">
+                        <img src="images/Screenshot 2025-04-30 at 18-08-47 Frontend Mentor FAQ accordion.png" alt="FAQ accordion" class="portfolio__img">
+                            <div class="portfolio__overlay">Click to see more</div>
+                        </div>
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">JavaScript</p>
+                        <h3 class="portfolio__title">FAQ Accordion</h3>
+                        <p class="portfolio__description">An accordion component that shows/hides answers.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a data-aos="zoom" data-aos-duration="1000" data-aos-delay="300" href="https://github.com/Mohammad-Irfan-Noorzada/Interactice-Rating-Component" target="_blank" class="portfolio__link">
+                <div class="portfolio__item">
+                    <div class="portfolio__image-wrapper">
+                        <img src="images/Screenshot 2025-04-30 at 18-06-05 Frontend Mentor Interactive rating component.png" alt="Huddle intro section" class="portfolio__img">
+                            <div class="portfolio__overlay">Click to see more</div>
+                        </div>
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">JavaScript</p>
+                        <h3 class="portfolio__title">Rating Component</h3>
+                        <p class="portfolio__description">A card that allows users to submit a rating and see a thank-you state.</p>            
+                    </div>           
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+<!---------- Contact --------->
+    <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+            <div class="contact__content">
+                <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="section__title">Hire Me</h2>
+                <p  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="contact__description">I am available for freelance work. Connect with me via phone: <a href="tel:+93788134182">+93788134182</a> or email: <a href="mailto:irfan.noorzada123@gmail.com">irfan.noorzada123@gmail.com</a></p>
+
+                <form data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="contact__form" id="contact-form">
+
+                    <div class="contact__form-input">
+                        <input type="text" name="name" placeholder="Your Name *" class="contact__input" id="contact-name">
+                    </div>
+
+                    <div class="contact__form-input">
+                        <input type="email" name="email" placeholder="Your e-mail" class="contact__input" id="contact-email">
+                    </div>
+
+                    <div class="contact__form-input">
+                        <input type="text" name="subject" placeholder="Write a Subject" class="contact__input" id="contact-subject">
+                    </div>
+
+                    <div class="contact__form-input">
+                        <textarea name="message" id="contact-message" class="contact__input textarea" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit" class="btn">
+
+                    <p class="contact__error-message" id="error-message"></p>
+                </form>
+            </div>
+
+            <img data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" src="images/XUPS1335.JPEG" alt="my-photo " class="contact__img">
+        </div>
+    </section>
+
+</main>
+
+
+<!---------- Footer --------->
+<footer data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="footer">
+    <div class="footer__container container grid">
+        <a href="index.html" class="footer__logo">I<span>r</span>f<span>a</span>n</a>
+        <div class="footer__socials">
+            <a href="https://www.facebook.com/irfan.codes4" target="_blank" class="footer__social-link">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/irfan_codes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="footer__social-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Mohammad-Irfan-Noorzada" target="_blank" class="footer__social-link">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://x.com/irfan_codes" target="_blank" class="footer__social-link">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+        <p class="footer__copyright">&copy; 2025. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<!---------- Scroll Up --------->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="fa-solid fa-angle-up scrollup__icon"></i>
+</a>
+
+<!---------- Email JS --------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+<!---------- AOS JS --------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

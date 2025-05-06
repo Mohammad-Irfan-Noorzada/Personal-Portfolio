@@ -1,0 +1,61 @@
+/* ------ Families ------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;700;900&display=swap');
+
+$primary-family: "Poppins", sans-serif;
+$secondary-family: "Montserrat", sans-serif;
+
+
+/* ------ Collors ------*/
+$sky-blue-light: hsl(188, 52%, 75%);
+$sky-blue-dark: hsl(190, 50, 59);
+$greyish-bc-color: hsl(214, 14%, 10%);
+$dark-bc-color: hsl(0, 0%, 7%);
+$grey-light: hsl(0, 13%, 95%);
+$warm-brown: hsl(16, 12%, 54%);
+$error-red-color: hsl(0, 100%, 65%);
+
+
+/* ------ F-Sizes ------*/
+$big-font-size: clamp(2rem, 0.9706rem + 4.7059vw, 4.5rem); // 72px
+$h1-font-size: clamp(1.75rem, 0.9265rem + 3.7647vw, 3.75rem); // 60px
+$h2-font-size: 1.75rem; // 28px
+$h3-font-size: 1.4rem; // 22.4px
+$normal-font-size: 1.125rem; // 18px
+$small-font-size: 1rem; // 16px
+$smaller-font-size: 0.875rem; // 14px
+
+
+/* ------ F-Weights ------*/
+$weight-300: 300;
+$weight-400: 400;
+$weight-500: 500;
+$weight-600: 600;
+$weight-700: 700;
+$weight-900: 900;
+
+
+/* ------ Transition ------*/
+$transition: cubic-bezier(0.05, 0.2, 0.1, 1);
+
+
+/* ------ Border Radius ------*/
+$redius: 0.5rem; // 8px
+
+
+/* ------ Z-index ------*/
+$z-tooltip: 10;
+$z-fixed: 100;
+
+
+/* ------ Height ------*/
+$header-height: 5rem; // 80px
+
+
+/* ------ 992px ------*/
+$h2-font-size-992: 1.5rem; // 24px
+$h3-font-size-992: 1.25rem; // 20px
+$normal-font-size-992: 1rem; // 16px
+$small-font-size-992: 0.9375rem; // 15px
+$smaller-font-size-992: 0.813rem; // 13px
+
+$header-height-992: 5rem; // 80px

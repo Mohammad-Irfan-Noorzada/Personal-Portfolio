@@ -1,0 +1,51 @@
+@import 'variable';
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, textarea, body {
+    color: $grey-light;
+    font-family: $primary-family;
+    font-size: $normal-font-size;
+    font-weight: $weight-300;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: $dark-bc-color;
+}
+
+h1, h2, h3 {
+    color: $sky-blue-light;
+    font-weight: $weight-700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $sky-blue-dark;
+}
+
+p {
+    line-height: 1.67em;
+}
+
+img {
+    max-width: 100%;
+}

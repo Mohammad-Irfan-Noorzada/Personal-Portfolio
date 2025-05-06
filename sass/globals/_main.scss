@@ -1,0 +1,118 @@
+@use 'function' as x;
+@import 'breakpoint'; 
+
+.container {
+    max-width: x.rem(1260);
+    margin-inline: auto;
+    padding-inline: x.rem(12);
+
+    @include breakpoint('xl') {
+        max-width: x.rem(960);
+    }
+
+    @include breakpoint('lg') {
+        max-width: x.rem(720);  
+    }
+
+    @include breakpoint('md') {
+        max-width: x.rem(540);  
+    }
+}
+
+.grid {
+    display: grid;
+    gap: x.rem(28);
+}
+
+.section {
+    padding-block: x.rem(100);
+
+    &__title {
+        font-size: $h1-font-size;
+        margin-bottom: x.rem(16);
+    }
+
+    &__title:not(.about .section__title, .contact .section__title) {
+        text-align: center;
+    }
+
+    &__description {
+        text-align: center;
+        max-width: x.rem(600);
+        margin-inline: auto;
+        margin-bottom: x.rem(60);
+    }
+}
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: $grey-light;
+    border: x.rem(2) solid $sky-blue-dark;
+    padding: x.rem(8) x.rem(20);
+    border-radius: $redius;
+    font-size: $smaller-font-size;
+    font-weight: $weight-500;
+    letter-spacing: x.rem(2);
+    cursor: pointer;
+    transition: all .3s $transition;
+
+    &:hover {
+        border: x.rem(2) solid $warm-brown;
+        color: $warm-brown;
+    }
+}
+
+.scroll-header {
+    position: fixed;
+    background-color: $greyish-bc-color;
+    box-shadow: 0 0 x.rem(15) hsla(0, 0, 0, 0.55);
+    animation: slide-down .7s;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.scroll-header, .nav {
+    height: $header-height;
+}
+
+.scrollup {
+    position: fixed;
+    right: x.rem(16);
+    bottom: -100%;
+    width: x.rem(50);
+    height: x.rem(50);
+    border-radius: 50%;
+    background-color: $grey-light;
+    display: grid;
+    place-items: center;
+    z-index: $z-fixed;
+    transition: all .3s $transition;
+
+    @include breakpoint('lg') {
+        width: x.rem(36);
+        height: x.rem(36);
+    }
+
+    &__icon {
+        color: $warm-brown;
+        font-size: x.rem(36);
+        line-height: 1;
+
+        @include breakpoint('lg') {
+            font-size: x.rem(26);
+        }
+    }
+}
+
+.show-scroll {
+    bottom: x.rem(48);
+}

@@ -1,0 +1,156 @@
+@use 'function' as s;
+@import 'variable';
+@import 'breakpoint';
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: $z-fixed;
+}
+
+.nav {
+    display: flex; 
+    height: calc($header-height) + s.rem(24);
+    align-items: center;
+    justify-content: space-between;
+    column-gap: s.rem(56);
+
+    @include breakpoint('lg') {
+        height: $header-height-992;
+        column-gap: s.rem(20);
+    }
+
+    &__logo {
+        color: $grey-light;
+        font-size: s.rem(35);
+        font-weight: $weight-700;
+
+        @include breakpoint('lg') {
+            font-size: s.rem(32);
+        }
+
+        & span {
+            color: $sky-blue-dark;
+        }
+    }
+
+    &__list, &__socials {
+        display: flex;
+    }
+
+    &__toggle, &__close {
+        display: none;
+
+        @include breakpoint('lg') {
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    &__toggle {
+
+        @include breakpoint('lg') {
+            font-size: $h2-font-size-992;
+        }
+        
+    }
+
+    &__list {
+        column-gap: s.rem(32);
+        font-size: $small-font-size;
+        font-weight: $weight-500;
+    }
+
+    &__link, &__social-link {
+        font-style: $small-font-size;
+        color: $grey-light;
+        transition: all .3s $transition;
+    }
+
+    &__socials {
+        column-gap: s.rem(24);
+        margin-left: auto;
+
+        @include breakpoint('lg') {
+            column-gap: s.rem(16);
+        }
+    }
+
+    &__social-link {
+
+        &:hover {
+            color: $sky-blue-dark;
+            transform: translateY(-20%);
+        }
+    }
+
+    &__link-btn {
+        font-size: $small-font-size;
+        background-color: transparent;
+        border-color: $sky-blue-dark;
+        padding: s.rem(10) s.rem(20);
+
+        @include breakpoint('lg') {
+            display: none !important;
+        }
+    }
+
+    &__active-link, &__link:hover {
+        color: $sky-blue-dark;
+    }
+
+    &__btns {
+
+        @include breakpoint('xl') {
+            display: none;
+        }
+
+        @include breakpoint('lg') {
+            display: block;
+        }
+    }
+
+    &__menu {
+
+        @include breakpoint('lg') {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 60vw;
+            height: 100vh;
+            background-color: $greyish-bc-color;
+            padding: s.rem(56);
+            transition: all .8s $transition;
+        }
+        
+        @include breakpoint('sm') {
+            width: 100vw;
+            padding: s.rem(44);
+        }
+    }
+
+    &__list {
+
+        @include breakpoint('lg') {
+            flex-direction: column;
+            row-gap: s.rem(18);
+        } 
+    }
+
+    &__close {
+
+        @include breakpoint('lg') {
+            font-size: s.rem(24);
+            position: absolute;
+            top: s.rem(16);
+            right: s.rem(16);
+            cursor: pointer;
+        }
+    }
+}
+
+.show-menu {
+    right: 0;
+}

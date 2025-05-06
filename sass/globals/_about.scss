@@ -1,0 +1,111 @@
+@use 'function' as z;
+
+.about {
+    background-color: $greyish-bc-color;
+    
+    &__container {
+        grid-template-columns: 5fr 7fr;
+        align-items: center;
+        column-gap: z.rem(64);
+
+        @include breakpoint('xl') {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__img {
+        border-radius: $redius;
+
+        @include breakpoint('xl') {
+            width: z.rem(450);
+            margin-inline: auto;
+        }
+        
+        @include breakpoint('lg') {
+            width: z.rem(400);
+        }
+
+        @include breakpoint('md') {
+            width: z.rem(350);
+        }
+
+        @include breakpoint('sm') {
+            width: z.rem(300);
+        }
+    }
+
+    &__description {
+        margin-bottom: z.rem(32);
+    }
+}
+
+.tabs {
+    display: flex;
+    column-gap: z.rem(40);
+    margin-bottom: z.rem(20);
+
+    @include breakpoint('md') {
+        flex-wrap: wrap;    
+        row-gap: z.rem(12);
+        column-gap: z.rem(18);
+    }
+
+    @include breakpoint('sm') {
+        font-size: $small-font-size;
+    }
+
+    &__btn, &__description span:first-child {
+        font-weight: $weight-500;
+    }
+
+    &__btn {
+        cursor: pointer;
+        color: $sky-blue-dark;
+        position: relative;
+        padding-bottom: z.rem(4);
+
+        &:hover {
+            color: $warm-brown;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30%;
+            height: z.rem(2);
+            background-color: $grey-light;
+            transition: all .5s $transition;
+        }
+    }
+
+    &__data {
+        row-gap: z.rem(16);
+    }
+
+    &__description span:last-child {
+        display: block;
+
+        @include breakpoint('sm') {
+            display: inline;
+        }
+    }
+
+    &__active-tab {
+        color: $warm-brown;
+
+        &::after {
+            background-color: $warm-brown;
+            width: 100%;
+        }
+    } 
+
+    &__item[data-content] {
+        display: none;
+    }
+
+    &__active-tabs[data-content] {
+        display: block;
+    }
+}
