@@ -26,7 +26,8 @@ This project showcases my skills, services, and the projects I've worked on. Bui
 
 You can reach me at:
 
-- 📧 **Email**: irfan.noorzada123@gmail.com  
+- 📧 **Email**: irfan.noorzada123@gmail.com
+- 📞 **Phone**: +93788134182
 - 🌐 [Live Website](https://mohammad-irfan-noorzada.github.io/Personal-Portfolio/)
 - 💼 [GitHub Profile](https://github.com/Mohammad-Irfan-Noorzada)  
 - 📸 [Instagram](https://instagram.com/irfan_codes)   
