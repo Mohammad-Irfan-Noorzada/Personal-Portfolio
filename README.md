@@ -28,7 +28,7 @@ You can reach me at:
 
 - 📧 **Email**: irfan.noorzada123@gmail.com  
 - 🌐 [Live Website](https://mohammad-irfan-noorzada.github.io/Personal-Portfolio/)
-- 💼 [GitHub Profile](https://github.com/Mohammad-Irfan_Noorzada)  
+- 💼 [GitHub Profile](https://github.com/Mohammad-Irfan-Noorzada)  
 - 📸 [Instagram](https://instagram.com/irfan_codes)   
 - 🐦 [Twitter/X](https://twitter.com/irfan_codes)
 
