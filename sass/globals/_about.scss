@@ -5,7 +5,7 @@
     
     &__container {
         grid-template-columns: 5fr 7fr;
-        align-items: center;
+        align-items: end;
         column-gap: z.rem(64);
 
         @include breakpoint('xl') {
@@ -23,6 +23,7 @@
         
         @include breakpoint('lg') {
             width: z.rem(400);
+            display: none;
         }
 
         @include breakpoint('md') {

@@ -8,6 +8,12 @@
 
     @include breakpoint('lg') {
         padding-top: c.rem(144);
+        padding-bottom: c.rem(80);
+    }
+
+    @include breakpoint('sm') {
+        padding-top: c.rem(144);
+        padding-bottom: c.rem(60);
     }
 
     &__container {
@@ -21,17 +27,24 @@
     }
 
     &__content {
+        text-align: left;
 
         @include breakpoint('xl') {
             order: 1;
+            text-align: center;
         }
+    }
+
+    &__texts {
+        display: flex;
+        flex-direction: column;
+        gap: c.rem(6);
     }
 
     &__subtitle {
         font-size: $small-font-size;
         font-weight: $weight-400;
         letter-spacing: c.rem(4);
-        margin-bottom: c.rem(20);
     }
 
     &__title {
@@ -43,7 +56,39 @@
         & span {
             color: $warm-brown;
             display: block;
+            font-size: $h1-typing-animation;
+            margin-top: c.rem(15);
+
+            @include breakpoint('lg') {
+                margin-top: c.rem(10);
+            }
       }
+    }
+
+    &__btns {
+        margin-top: c.rem(40);
+        display: flex;
+        justify-content: start;
+        gap: c.rem(20);
+        flex-wrap: wrap;
+
+        @include breakpoint('xl') {
+            gap: c.rem(15);
+            justify-content: center;
+        }
+
+        @include breakpoint('md') {
+            gap: c.rem(10);
+        }
+    }
+
+    &__link-btn {
+        letter-spacing: 0;
+        font-size: $normal-font-size;
+
+        @include breakpoint('md') {
+            font-size: $small-font-size;
+        }
     }
 
     &__img {
@@ -81,4 +126,3 @@
         }
     }
 }
-

@@ -48,12 +48,16 @@
 .section {
     padding-block: x.rem(100);
 
+    @include breakpoint('lg') {
+        padding-block: x.rem(50);
+    }
+
     &__title {
         font-size: $h1-font-size;
         margin-bottom: x.rem(16);
     }
 
-    &__title:not(.about .section__title, .contact .section__title) {
+    &__title:not(.about, .section__title, .contact .section__title) {
         text-align: center;
     }
 
@@ -70,9 +74,9 @@
     background-color: transparent;
     color: $grey-light;
     border: x.rem(2) solid $sky-blue-dark;
-    padding: x.rem(8) x.rem(20);
+    padding: x.rem(8) x.rem(20) x.rem(10);
     border-radius: $redius;
-    font-size: $smaller-font-size;
+    font-size: $small-font-size;
     font-weight: $weight-500;
     letter-spacing: x.rem(2);
     cursor: pointer;
@@ -136,4 +140,8 @@
 
 .show-scroll {
     bottom: x.rem(48);
+}
+
+.pad-left {
+    padding-left: x.rem(4);
 }

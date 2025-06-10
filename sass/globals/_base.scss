@@ -16,6 +16,10 @@ input, textarea, body {
     font-family: $primary-family;
     font-size: $normal-font-size;
     font-weight: $weight-300;
+
+    @include breakpoint('md') {
+        font-size: $small-font-size;
+    }
 }
 
 input, textarea {
@@ -45,9 +49,9 @@ a {
 
 p {
     line-height: 1.67em;
+    letter-spacing: 1.2px;
 }
 
 img {
     max-width: 100%;
 }
-

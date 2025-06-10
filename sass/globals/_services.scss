@@ -42,14 +42,18 @@
     &__title {
         font-size: $h3-font-size;
         font-weight: $weight-500;
-        margin-block: b.rem(28) b.rem(20);
+        margin-block: b.rem(28) b.rem(5);
 
         @include breakpoint('lg') {
-            margin-block: b.rem(24) b.rem(16);
+            margin-block: b.rem(24) b.rem(5);
         }
     }
 
     &__description {
         font-weight: $weight-400;
     }
+}
+
+.section__title {
+    text-align: center;
 }
