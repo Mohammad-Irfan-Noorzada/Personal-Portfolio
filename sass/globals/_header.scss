@@ -118,16 +118,17 @@
             position: fixed;
             top: 0;
             right: -100%;
-            width: 60vw;
+            width: 50vw;
             height: 100vh;
             background-color: $greyish-bc-color;
-            padding: s.rem(56);
+            padding: s.rem(100) s.rem(50);
+            z-index: 999;
             transition: all .8s $transition;
         }
         
         @include breakpoint('sm') {
-            width: 100vw;
-            padding: s.rem(44);
+            padding: s.rem(80) s.rem(40);
+            width: 60vw;
         }
     }
 
@@ -144,9 +145,14 @@
         @include breakpoint('lg') {
             font-size: s.rem(24);
             position: absolute;
+            top: s.rem(25);
+            right: s.rem(30);
+            cursor: pointer;
+        }
+
+        @include breakpoint('sm') {
             top: s.rem(16);
             right: s.rem(16);
-            cursor: pointer;
         }
     }
 }

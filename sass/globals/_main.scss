@@ -1,6 +1,27 @@
 @use 'function' as x;
 @import 'breakpoint'; 
 
+.nav__overlay {
+
+    @include breakpoint('lg') {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: rgba(0,0,0,0.8);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity .3s ease;
+    }
+}
+
+.show-overlay {
+    opacity: 0.8;
+    pointer-events: auto;
+}
+
 .container {
     max-width: x.rem(1260);
     margin-inline: auto;

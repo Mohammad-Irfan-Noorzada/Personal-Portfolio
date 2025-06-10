@@ -1,7 +1,7 @@
 @use 'function' as m;
 .contact {
     overflow-x: hidden !important;
-
+    
     &__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;

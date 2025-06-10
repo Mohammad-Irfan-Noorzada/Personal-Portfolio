@@ -1,13 +1,15 @@
 /* -------- Show Menu -------- */
 const navMenu = document.getElementById("nav-menu"),
     navToggle = document.getElementById("nav-toggle"),
-    navClose = document.getElementById("nav-close");
+    navClose = document.getElementById("nav-close"),
+    navOverlay = document.getElementById("nav-overlay");
 
 /* -------- Menu Show -------- */
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener("click", () => {
         navMenu.classList.add("show-menu");
+        navOverlay.classList.add("show-overlay");
     });
 };
 
@@ -16,6 +18,14 @@ if(navToggle){
 if(navClose){
     navClose.addEventListener("click", () => {
         navMenu.classList.remove("show-menu");
+        navOverlay.classList.remove("show-overlay")
+    });
+};
+
+if(navOverlay) {
+    navOverlay.addEventListener("click", () => {
+        navMenu.classList.remove("show-menu");
+        navOverlay.classList.remove("show-overlay");
     });
 };
 
@@ -27,13 +37,14 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 function linkAction() {
     const navMenu = document.getElementById("nav-menu");
     navMenu.classList.remove("show-menu");
+    navOverlay.classList.remove("show-overlay");
 };
 
 
 /* -------- Typing Animation -------- */
 const typedTextSpan = document.querySelector(".typing");
+const textArray = ["JS Developer,", "Web Designer,", "Web Specialist,", "React Developer."];
 
-const textArray = ["JS Developer.", "Web Designer.", "Web Specialist."];
 let textArrayIndex = 0;
 
 function typeNext() {
