@@ -28,8 +28,8 @@ You can reach me at:
 
 - 📧 **Email**: irfan.noorzada123@gmail.com
 - 📞 **Phone**: +93788134182
-- 🌐 [Live Website](https://mohammad-irfan-noorzada.github.io/Personal-Portfolio/)
-- 💼 [GitHub Profile](https://github.com/Mohammad-Irfan-Noorzada)  
+- 🌐 [Live Website](https://irfan-noorzada.vercel.app/)
+- 💼 [GitHub Profile](https://github.com/coder-irfan)  
 - 📸 [Instagram](https://instagram.com/irfan_codes)   
 - 🐦 [Twitter/X](https://twitter.com/irfan_codes)
 
